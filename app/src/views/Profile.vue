@@ -8,13 +8,9 @@
                         
                     </div>
                     <div class="profile-details">
-                        <h2>John Doe</h2>
-                        <p class="user-handle">@johndoe</p>
-                        <p class="user-bio">Movie enthusiast and popcorn connoisseur</p>
-                        <button class="edit-profile-btn">
-                            <EditIcon size="16" />
-                            Edit Profile
-                        </button>
+                        <h2>{{ user.first_name }}</h2>
+                        <p class="user-handle">@{{ user.username }}</p>
+                        <p class="user-bio">{{user.bio}}</p>
                     </div>
                 </div>
             </section>
@@ -105,7 +101,7 @@
     </div>
 </template>
 
-<script setup>
+<script >
 import { ref } from 'vue'
 import { HomeIcon, SearchIcon, UserIcon, TrashIcon, CameraIcon, EditIcon, StarIcon, EyeIcon } from 'lucide-vue-next'
 
@@ -141,6 +137,15 @@ const ToggleSwitch = {
         <span class="slider"></span>
       </label>
     `
+}
+
+export default{
+    props:{
+        user:{
+            type: Array,
+            required: true
+        }
+    }
 }
 </script>
 

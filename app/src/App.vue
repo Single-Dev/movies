@@ -1,54 +1,50 @@
-<script setup>
+<script>
 import { RouterLink, RouterView } from 'vue-router'
 import NavBar from './components/nav/NavBar.vue';
+import axios from 'axios'
+
+export default {
+  data() {
+    return {
+      user: {
+        id: null,
+        firstName: '',
+        lastName: '',
+        username: '',
+      },
+    }
+  },
+
+  mounted() {
+    Telegram.WebApp.ready();
+    Telegram.WebApp.expand();
+    if (Telegram && Telegram.WebApp) {
+      const tgUser = Telegram.WebApp.initDataUnsafe.user;
+      this.user = {
+        id: tgUser.id,
+        firstName: tgUser.first_name,
+        lastName: tgUser.last_name,
+        username: tgUser.username,
+        bio: tgUser.bio,
+      };
+      console.log(this.user); // Displays the user object
+    }
+    console.log(Telegram.WebApp.initDataUnsafe);
+  },
+}
+
 </script>
 
 <template>
   <div class="app">
     <div class="content">
-
-      <RouterView />
-      <NavBar/>
+      <RouterView :user="user"/>
+      <NavBar />
     </div>
   </div>
 </template>
 
 <style scoped>
-/* header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-} */
-
 @media (min-width: 1024px) {
   header {
     display: flex;
@@ -102,5 +98,4 @@ nav a:first-of-type {
         width: 350px;
     }
 } */
-
 </style>
