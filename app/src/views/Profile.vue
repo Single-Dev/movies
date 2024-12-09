@@ -14,7 +14,9 @@
                     </div>
                 </div>
             </section>
-
+            <section>
+                <Star/>
+            </section>
             <section class="stats-section">
                 <div class="stat-item">
                     <h3>Movies Watched</h3>
@@ -57,7 +59,7 @@
 <script>
 import { ref } from 'vue'
 import { HomeIcon, SearchIcon, UserIcon, TrashIcon, CameraIcon, EditIcon, StarIcon, EyeIcon } from 'lucide-vue-next'
-
+import Star from '@/components/star/Star.vue'
 
 const favoriteGenre = ref('action')
 const preferredLanguage = ref('en')
@@ -103,7 +105,8 @@ export default {
     components: {
         TrashIcon,
         StarIcon,
-        EyeIcon
+        EyeIcon,
+        Star
     }
 
 }
