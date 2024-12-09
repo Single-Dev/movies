@@ -42,6 +42,7 @@ import { RouterLink } from 'vue-router';
     cursor: pointer;
     padding: 0.5rem;
     transition: color 0.3s ease;
+    text-decoration: none;
 }
 
 .nav-button:hover {
@@ -51,6 +52,7 @@ import { RouterLink } from 'vue-router';
 .nav-button span {
     font-size: 0.8rem;
     margin-top: 0.25rem;
+    font-family: sans-serif;
 }
 
 @media (min-width: 768px) {

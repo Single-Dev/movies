@@ -76,7 +76,7 @@
   const yearRange = ref([1900, 2024])
   
   const allMovies = [
-    { id: 1, title: 'Home Alone', year: 1994, genre: 'Sci-Fi', poster: '../static/home.jpg?height=300&width=200&text=Inception' },
+    { id: 1, title: 'Home Alone', year: 1994, genre: 'Sci-Fi', poster: 'src/static/home.jpg?height=300&width=200&text=Inception' },
     { id: 2, title: 'Rio', year: 2022, genre: 'Drama', poster: '../static/rio.jpg?height=300&width=200&text=Shawshank' },
     { id: 3, title: 'Puss In Buts', year: 2008, genre: 'Action', poster: '../static/puss.jpg?height=300&width=200&text=Dark+Knight' },
     { id: 4, title: 'Beckzodiy', year: 2006, genre: 'Crime', poster: '../static/my.jpg?height=300&width=200&text=Pulp+Fiction' },
