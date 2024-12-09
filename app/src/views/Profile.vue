@@ -1,11 +1,5 @@
 <template>
     <div class="app">
-        <header class="header">
-            <div class="container">
-                <h1 class="logo">MovieVue</h1>
-            </div>
-        </header>
-
         <main class="main-content">
             <section class="profile-section">
                 <div class="profile-header">
@@ -161,21 +155,11 @@ const ToggleSwitch = {
     position: relative;
 }
 
-.header {
-    background-color: #2c2c2c;
-    padding: 1rem 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
-}
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
 }
 
 .main-content {
@@ -476,40 +460,6 @@ input:checked+.slider:before {
     color: #b3b3b3;
 }
 
-.nav-panel {
-    display: flex;
-    justify-content: space-around;
-    background-color: #2c2c2c;
-    padding: 0.5rem;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-}
-
-.nav-button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    padding: 0.5rem;
-    transition: color 0.3s ease;
-}
-
-.nav-button:hover,
-.nav-button.active {
-    color: #e50914;
-}
-
-.nav-button span {
-    font-size: 0.8rem;
-    margin-top: 0.25rem;
-}
-
 @media (min-width: 768px) {
     .profile-header {
         align-items: flex-start;
@@ -517,19 +467,6 @@ input:checked+.slider:before {
 
     .movie-grid {
         grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    }
-
-    .nav-panel {
-        padding: 1rem;
-    }
-
-    .nav-button {
-        flex-direction: row;
-    }
-
-    .nav-button span {
-        margin-top: 0;
-        margin-left: 0.5rem;
     }
 }
 

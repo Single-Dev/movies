@@ -21,7 +21,7 @@
         <h2>Popular Movies</h2>
         <div class="movie-grid">
           <div v-for="i in 10" :key="i" class="movie-card">
-            <img :src="`src/static/home.jpg?height=300&width=200&text=Movie ${i}`"
+            <img :src="`../static/home.jpg?height=300&width=200&text=Movie ${i}`"
               :alt="`Movie ${i}`" />
             <div class="movie-info">
               <h3>Movie Title {{ i }}</h3>

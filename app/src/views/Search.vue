@@ -1,9 +1,5 @@
 <template>
     <div class="search-panel">
-      <header class="header">
-        <h1 class="logo">MovieVue</h1>
-      </header>
-  
       <main class="main-content">
         <div class="search-container">
           <div class="search-input-wrapper">
@@ -80,12 +76,12 @@
   const yearRange = ref([1900, 2024])
   
   const allMovies = [
-    { id: 1, title: 'Home Alone', year: 1994, genre: 'Sci-Fi', poster: 'src/static/home.jpg?height=300&width=200&text=Inception' },
-    { id: 2, title: 'Rio', year: 2022, genre: 'Drama', poster: 'src/static/rio.jpg?height=300&width=200&text=Shawshank' },
-    { id: 3, title: 'Puss In Buts', year: 2008, genre: 'Action', poster: 'src/static/puss.jpg?height=300&width=200&text=Dark+Knight' },
-    { id: 4, title: 'Beckzodiy', year: 2006, genre: 'Crime', poster: 'src/static/my.jpg?height=300&width=200&text=Pulp+Fiction' },
-    { id: 5, title: 'King Kong', year: 2018, genre: 'Drama', poster: 'src/static/king.jpg?height=300&width=200&text=Forrest+Gump' },
-    { id: 6, title: 'Zorro', year: 1999, genre: 'Sci-Fi', poster: 'src/static/zorro.jpg?height=300&width=200&text=The+Matrix' },
+    { id: 1, title: 'Home Alone', year: 1994, genre: 'Sci-Fi', poster: '../static/home.jpg?height=300&width=200&text=Inception' },
+    { id: 2, title: 'Rio', year: 2022, genre: 'Drama', poster: '../static/rio.jpg?height=300&width=200&text=Shawshank' },
+    { id: 3, title: 'Puss In Buts', year: 2008, genre: 'Action', poster: '../static/puss.jpg?height=300&width=200&text=Dark+Knight' },
+    { id: 4, title: 'Beckzodiy', year: 2006, genre: 'Crime', poster: '../static/my.jpg?height=300&width=200&text=Pulp+Fiction' },
+    { id: 5, title: 'King Kong', year: 2018, genre: 'Drama', poster: '../static/king.jpg?height=300&width=200&text=Forrest+Gump' },
+    { id: 6, title: 'Zorro', year: 1999, genre: 'Sci-Fi', poster: '../static/zorro.jpg?height=300&width=200&text=The+Matrix' },
   ]
   
   const filteredMovies = computed(() => {
@@ -112,18 +108,6 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-  }
-  
-  .header {
-    background-color: #2c2c2c;
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin: 0;
   }
   
   .main-content {
@@ -271,33 +255,6 @@
     margin-top: 2rem;
   }
   
-  .bottom-nav {
-    display: flex;
-    justify-content: space-around;
-    background-color: #2c2c2c;
-    padding: 0.5rem;
-    position: sticky;
-    bottom: 0;
-  }
-  
-  .nav-button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .nav-icon {
-    font-size: 1.5rem;
-    margin-bottom: 0.25rem;
-  }
-  
-  .nav-label {
-    font-size: 0.8rem;
-  }
   
   @media (min-width: 768px) {
     .search-input-wrapper {
@@ -318,9 +275,6 @@
     .search-results {
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
-  
-    .bottom-nav {
-      display: none;
-    }
+
   }
   </style>
