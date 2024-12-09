@@ -4,6 +4,10 @@ import NavBar from './components/nav/NavBar.vue';
 import axios from 'axios'
 
 export default {
+  components:{
+    NavBar,
+    RouterView
+  },
   data() {
     return {
       user: {

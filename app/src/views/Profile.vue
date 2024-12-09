@@ -18,50 +18,15 @@
             <section class="stats-section">
                 <div class="stat-item">
                     <h3>Movies Watched</h3>
-                    <p>247</p>
+                    <p>0</p>
                 </div>
                 <div class="stat-item">
                     <h3>Reviews</h3>
-                    <p>52</p>
+                    <p>0</p>
                 </div>
                 <div class="stat-item">
                     <h3>Watchlist</h3>
-                    <p>18</p>
-                </div>
-            </section>
-
-            <section class="preferences-section">
-                <h3>Preferences</h3>
-                <div class="preference-grid">
-                    <div class="preference-item">
-                        <label for="favorite-genre">Favorite Genre:</label>
-                        <select id="favorite-genre" v-model="favoriteGenre">
-                            <option value="action">Action</option>
-                            <option value="comedy">Comedy</option>
-                            <option value="drama">Drama</option>
-                            <option value="scifi">Sci-Fi</option>
-                            <option value="horror">Horror</option>
-                            <option value="romance">Romance</option>
-                        </select>
-                    </div>
-                    <div class="preference-item">
-                        <label for="language">Preferred Language:</label>
-                        <select id="language" v-model="preferredLanguage">
-                            <option value="en">English</option>
-                            <option value="es">Spanish</option>
-                            <option value="fr">French</option>
-                            <option value="de">German</option>
-                            <option value="ja">Japanese</option>
-                        </select>
-                    </div>
-                    <div class="preference-item">
-                        <label for="notifications">Email Notifications:</label>
-                        <ToggleSwitch id="notifications" v-model="emailNotifications" />
-                    </div>
-                    <div class="preference-item">
-                        <label for="dark-mode">Dark Mode:</label>
-                        <ToggleSwitch id="dark-mode" v-model="darkMode" />
-                    </div>
+                    <p>0</p>
                 </div>
             </section>
 
@@ -85,18 +50,6 @@
                 </div>
             </section>
 
-            <section class="recent-activity">
-                <h3>Recent Activity</h3>
-                <ul class="activity-list">
-                    <li v-for="activity in recentActivities" :key="activity.id" class="activity-item">
-                        <component :is="activity.icon" size="20" class="activity-icon" />
-                        <div class="activity-content">
-                            <p>{{ activity.text }}</p>
-                            <span class="activity-date">{{ activity.date }}</span>
-                        </div>
-                    </li>
-                </ul>
-            </section>
         </main>
     </div>
 </template>
