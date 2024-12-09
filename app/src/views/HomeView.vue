@@ -56,6 +56,8 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
   /* Added this line */
 }
 
@@ -187,15 +189,14 @@ h2 {
 }
 
 @media (max-width: 600px) {
-  .header .container {
-    flex-direction: column;
-    align-items: stretch;
-  }
+  /* .app {
+        width: 400px;
+    } */
+}
 
-  .logo {
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-
+@media (max-width: 400px) {
+    .app {
+        width: 375px;
+    }
 }
 </style>

@@ -14,7 +14,7 @@ import NavBar from './components/nav/NavBar.vue';
 </template>
 
 <style scoped>
-header {
+/* header {
   line-height: 1.5;
   max-height: 100vh;
 }
@@ -47,7 +47,7 @@ nav a {
 
 nav a:first-of-type {
   border: 0;
-}
+} */
 
 @media (min-width: 1024px) {
   header {
@@ -75,20 +75,17 @@ nav a:first-of-type {
   }
 }
 
-
+/* 
 .content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100%;
-    /* Fill the WebView */
     width: 100%;
-    /* width: 400px;
-    min-height: 700px; */
     background-color: #fff;
     margin: 0 auto;
-    /* padding: 5rem 10px; */
+    padding: 5rem 10px;
 }
 
 .app {
@@ -97,13 +94,13 @@ nav a:first-of-type {
     width: 100%;
     height: 100%;
     overflow: hidden;
-}
+} */
 
 
-@media (max-width: 750px) {
+/* @media (max-width: 390px) {
     .content {
         width: 350px;
     }
-}
+} */
 
 </style>
