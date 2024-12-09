@@ -5,12 +5,12 @@
                 <div class="profile-header">
                     <div class="profile-avatar">
                         <img src="../static/my.jpg?height=150&width=150&text=Avatar" alt="User Avatar" class="avatar" />
-                        
+
                     </div>
                     <div class="profile-details">
                         <h2>{{ user.first_name }}</h2>
                         <p class="user-handle">@{{ user.username }}</p>
-                        <p class="user-bio">{{user.bio}}</p>
+                        <p class="user-bio">{{ user.bio }}</p>
                     </div>
                 </div>
             </section>
@@ -54,9 +54,10 @@
     </div>
 </template>
 
-<script >
+<script>
 import { ref } from 'vue'
 import { HomeIcon, SearchIcon, UserIcon, TrashIcon, CameraIcon, EditIcon, StarIcon, EyeIcon } from 'lucide-vue-next'
+
 
 const favoriteGenre = ref('action')
 const preferredLanguage = ref('en')
@@ -92,13 +93,19 @@ const ToggleSwitch = {
     `
 }
 
-export default{
-    props:{
-        user:{
+export default {
+    props: {
+        user: {
             type: Array,
             required: true
         }
+    },
+    components: {
+        TrashIcon,
+        StarIcon,
+        EyeIcon
     }
+
 }
 </script>
 
@@ -126,6 +133,7 @@ export default{
     overflow-y: auto;
     max-width: 800px;
     margin: 0 auto;
+    width: 345px;
 }
 
 .profile-section,
@@ -425,6 +433,9 @@ input:checked+.slider:before {
 
     .movie-grid {
         grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+    .main-content{
+        width: 600px;
     }
 }
 
