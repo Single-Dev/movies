@@ -10,7 +10,7 @@
             <section class="profile-section">
                 <div class="profile-header">
                     <div class="profile-avatar">
-                        <img src="http://localhost:5173/src/static/my.jpg?height=150&width=150&text=Avatar" alt="User Avatar" class="avatar" />
+                        <img src="../static/my.jpg?height=150&width=150&text=Avatar" alt="User Avatar" class="avatar" />
                         
                     </div>
                     <div class="profile-details">

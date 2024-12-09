@@ -7,9 +7,9 @@
       <section class="featured-movie">
         <h2>Featured Movie</h2>
         <div class="featured-movie-card">
-          <img src="https://movies-app-uz.vercel.app/static/my.jpg?height=400&width=800" alt="Featured Movie" />
+          <img src="../static/home.jpg?height=100&width=200" alt="Featured Movie" />
           <div class="featured-movie-info">
-            <h3>Awesome Movie Title</h3>
+            <h3>Puss In Buts</h3>
             <p>Action, Adventure | 2h 15min</p>
             <button class="watch-button">Watch Now</button>
           </div>
@@ -21,7 +21,7 @@
         <h2>Popular Movies</h2>
         <div class="movie-grid">
           <div v-for="i in 10" :key="i" class="movie-card">
-            <img :src="`https://movies-app-uz.vercel.app/static/my.jpg?height=300&width=200&text=Movie ${i}`"
+            <img :src="`src/static/home.jpg?height=300&width=200&text=Movie ${i}`"
               :alt="`Movie ${i}`" />
             <div class="movie-info">
               <h3>Movie Title {{ i }}</h3>
