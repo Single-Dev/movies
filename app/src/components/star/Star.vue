@@ -6,10 +6,16 @@
 
 <script>
 export default {
+    data() {
+        return {
+            user: {}, // Store Telegram user info
+        };
+    },
     mounted() {
         const tg = window.Telegram.WebApp;
         tg.ready();
-        tg.expand();
+        tg.expand(); // Optional: Expand app to full screen
+        this.user = tg.initDataUnsafe.user;
     },
     methods: {
         async buyStars() {
