@@ -58,12 +58,9 @@
 
 <script>
 import { ref } from 'vue'
-import { HomeIcon, SearchIcon, UserIcon, TrashIcon, CameraIcon, EditIcon, StarIcon, EyeIcon } from 'lucide-vue-next'
-import Star from '@/components/star/Star.vue'
+import {  TrashIcon, StarIcon, EyeIcon } from 'lucide-vue-next'
 
-const favoriteGenre = ref('action')
 const preferredLanguage = ref('en')
-const emailNotifications = ref(true)
 const darkMode = ref(false)
 
 const watchlist = ref([
@@ -73,27 +70,11 @@ const watchlist = ref([
     { id: 4, title: 'The Dark Knight', year: 2008, poster: '/placeholder.svg?height=300&width=200&text=Dark Knight' },
 ])
 
-const recentActivities = ref([
-    { id: 1, icon: StarIcon, text: 'Rated "The Godfather" 5 stars', date: '2 hours ago' },
-    { id: 2, icon: EyeIcon, text: 'Watched "Interstellar"', date: '1 day ago' },
-    { id: 3, icon: TrashIcon, text: 'Removed "Avatar" from watchlist', date: '3 days ago' },
-])
 
 const removeFromWatchlist = (id) => {
     watchlist.value = watchlist.value.filter(movie => movie.id !== id)
 }
 
-// ToggleSwitch component (simplified for this example)
-const ToggleSwitch = {
-    props: ['modelValue'],
-    emits: ['update:modelValue'],
-    template: `
-      <label class="switch">
-        <input type="checkbox" :checked="modelValue" @change="$emit('update:modelValue', $event.target.checked)">
-        <span class="slider"></span>
-      </label>
-    `
-}
 
 export default {
     props: {
@@ -105,8 +86,7 @@ export default {
     components: {
         TrashIcon,
         StarIcon,
-        EyeIcon,
-        Star
+        EyeIcon
     }
 
 }

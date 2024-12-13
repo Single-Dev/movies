@@ -77,11 +77,11 @@
   
   const allMovies = [
     { id: 1, title: 'Home Alone', year: 1994, genre: 'Sci-Fi', poster: 'src/static/home.jpg?height=300&width=200&text=Inception' },
-    { id: 2, title: 'Rio', year: 2022, genre: 'Drama', poster: '../static/rio.jpg?height=300&width=200&text=Shawshank' },
-    { id: 3, title: 'Puss In Buts', year: 2008, genre: 'Action', poster: '../static/puss.jpg?height=300&width=200&text=Dark+Knight' },
-    { id: 4, title: 'Beckzodiy', year: 2006, genre: 'Crime', poster: '../static/my.jpg?height=300&width=200&text=Pulp+Fiction' },
-    { id: 5, title: 'King Kong', year: 2018, genre: 'Drama', poster: '../static/king.jpg?height=300&width=200&text=Forrest+Gump' },
-    { id: 6, title: 'Zorro', year: 1999, genre: 'Sci-Fi', poster: '../static/zorro.jpg?height=300&width=200&text=The+Matrix' },
+    { id: 2, title: 'Rio', year: 2022, genre: 'Drama', poster: 'src/static/rio.jpg?height=300&width=200&text=Shawshank' },
+    { id: 3, title: 'Puss In Buts', year: 2008, genre: 'Action', poster: 'src/static/puss.jpg?height=300&width=200&text=Dark+Knight' },
+    { id: 4, title: 'Beckzodiy', year: 2006, genre: 'Crime', poster: 'src/static/my.jpg?height=300&width=200&text=Pulp+Fiction' },
+    { id: 5, title: 'King Kong', year: 2018, genre: 'Drama', poster: 'src/static/king.jpg?height=300&width=200&text=Forrest+Gump' },
+    { id: 6, title: 'Zorro', year: 1999, genre: 'Sci-Fi', poster: 'src/static/zorro.jpg?height=300&width=200&text=The+Matrix' },
   ]
   
   const filteredMovies = computed(() => {
