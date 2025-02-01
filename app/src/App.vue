@@ -15,6 +15,7 @@ export default {
         firstName: '',
         lastName: '',
         username: '',
+        profile_pic: ''
       },
     }
   },
@@ -29,7 +30,7 @@ export default {
         firstName: tgUser.first_name,
         lastName: tgUser.last_name,
         username: tgUser.username,
-        bio: tgUser.bio,
+        profile_pic: tgUser.photo_url,
       };
       console.log(this.user); // Displays the user object
     }
