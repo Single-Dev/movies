@@ -4,13 +4,12 @@
             <section class="profile-section">
                 <div class="profile-header">
                     <div class="profile-avatar">
-                        <img src="{{ user.profile_pic }}&width=150&text=Avatar" alt="User Avatar" class="avatar" />
+                        <img :src="user.profile_pic + '&width=150&text=Avatar'" alt="User Avatar" class="avatar" />
 
                     </div>
                     <div class="profile-details">
                         <h2>{{ user.first_name }}</h2>
                         <p class="user-handle">@{{ user.username }}</p>
-                        <p class="user-bio">{{ user.bio }}</p>
                     </div>
                 </div>
             </section>
