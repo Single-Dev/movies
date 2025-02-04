@@ -30,9 +30,9 @@ export default {
         firstName: tgUser.first_name,
         lastName: tgUser.last_name,
         username: tgUser.username,
-        profile_pic: tgUser.photo_url,
+        // profile_pic: tgUser.photo_url,
       };
-      console.log(this.user); // Displays the user object
+      console.log(tgUser)
     }
     console.log(Telegram.WebApp.initDataUnsafe);
   },

@@ -4,7 +4,8 @@
             <section class="profile-section">
                 <div class="profile-header">
                     <div class="profile-avatar">
-                        <img :src="user.profile_pic + '&width=150&text=Avatar'" alt="User Avatar" class="avatar" />
+                        <!-- <img :src="user.profile_pic + '&width=150&text=Avatar'" alt="User Avatar" class="avatar" /> -->
+                        <img src="&width=150&text=Avatar" alt="User Avatar" class="avatar" />
 
                     </div>
                     <div class="profile-details">
