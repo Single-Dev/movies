@@ -54,12 +54,12 @@ const featuredMovies = [
 ]
 
 const popularMovies = [
-  { id: 1, title: 'Pulp Fiction', year: 1994, genre: 'Crime', rating: 8.9, poster: 'src/static/rio.jpg?height=300&width=200&text=Pulp+Fiction' },
-  { id: 2, title: 'Forrest Gump', year: 1994, genre: 'Drama', rating: 8.8, poster: 'src/static/king.jpg?height=300&width=200&text=Forrest+Gump' },
-  { id: 3, title: 'The Matrix', year: 1999, genre: 'Sci-Fi', rating: 8.7, poster: 'src/static/puss.jpg?height=300&width=200&text=The+Matrix' },
-  { id: 4, title: 'Goodfellas', year: 1990, genre: 'Crime', rating: 8.7, poster: 'src/static/home.jpg?height=300&width=200&text=Goodfellas' },
-  { id: 5, title: 'The Silence of the Lambs', year: 1991, genre: 'Thriller', rating: 8.6, poster: 'src/static/rio.jpg?height=300&width=200&text=Silence+of+the+Lambs' },
-  { id: 6, title: 'Schindler\'s List', year: 1993, genre: 'Biography', rating: 8.9, poster: 'src/static/my.jpg?height=300&width=200&text=Schindler\'s+List' },
+  { id: 1, title: 'Pulp Fiction', year: 1994, genre: 'Crime', rating: 8.9, poster: 'https://i.postimg.cc/DwNfP0Sg/home.jpg?height=300&width=200&text=Pulp+Fiction' },
+  { id: 2, title: 'Forrest Gump', year: 1994, genre: 'Drama', rating: 8.8, poster: 'https://i.postimg.cc/Bn3hHxVR/king.jpg?height=300&width=200&text=Forrest+Gump' },
+  { id: 3, title: 'The Matrix', year: 1999, genre: 'Sci-Fi', rating: 8.7, poster: 'https://i.postimg.cc/Y016CPM0/puss.jpg?height=300&width=200&text=The+Matrix' },
+  { id: 4, title: 'Goodfellas', year: 1990, genre: 'Crime', rating: 8.7, poster: 'https://i.postimg.cc/BbcF01B1/rio.jpg?height=300&width=200&text=Goodfellas' },
+  { id: 5, title: 'The Silence of the Lambs', year: 1991, genre: 'Thriller', rating: 8.6, poster: 'https://i.postimg.cc/7YK48fJN/zorro.jpg?height=300&width=200&text=Silence+of+the+Lambs' },
+  { id: 6, title: 'Schindler\'s List', year: 1993, genre: 'Biography', rating: 8.9, poster: 'https://i.postimg.cc/fbGSSvH9/my.jpg?height=300&width=200&text=Schindler\'s+List' },
 ]
 
 const currentSlide = ref(0)
